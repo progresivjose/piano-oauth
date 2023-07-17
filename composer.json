@@ -1,7 +1,7 @@
 {
     "name": "progresivjose/piano-oauth",
-    "minimum-stability": "dev",
-    "prefer-stable": false,
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.7"
