@@ -26,7 +26,7 @@ class Runner
         return $this;
     }
 
-    public function preAuth(String $redirectUrl, String $returnUrl, String $source = ""): void
+    public function preAuth(String $returnUrl, String $redirectUrl = 'https://sandbox.piano.io/id/', String $source = ""): void
     {
         $this->redirectToLoginForm
             ->setRedirectUrl($redirectUrl)

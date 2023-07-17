@@ -32,9 +32,9 @@ final class PianoOauth
         $this->runner->setAid($this->aid);
     }
 
-    public function preAuth(String $redirectUrl, String $returnUrl): void
+    public function preAuth(String $returnUrl, String $redirectUrl = 'https://sandbox.piano.io/id/', String $source = ''): void
     {
-        $this->runner->preAuth($redirectUrl, $returnUrl);
+        $this->runner->preAuth($returnUrl, $redirectUrl, $source);
     }
 
     public function postAuth(String $code, String $redirectUrl): ?User
