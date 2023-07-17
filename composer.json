@@ -1,6 +1,6 @@
 {
     "name": "progresivjose/piano-oauth",
-    "minimum-stability": "dev",
+    "minimum-stability": "v1.0.0",
     "prefer-stable": false,
     "require": {
         "php": "^8.1",
