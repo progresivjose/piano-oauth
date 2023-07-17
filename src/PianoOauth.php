@@ -32,11 +32,26 @@ final class PianoOauth
         $this->runner->setAid($this->aid);
     }
 
+    /**
+     * Redirects to the Piano Login Form
+     *
+     * @param String $returnUrl
+     * @param string $redirectUrl
+     * @param string $source
+     * @return void
+     */
     public function preAuth(String $returnUrl, String $redirectUrl = 'https://sandbox.piano.io/id/', String $source = ''): void
     {
         $this->runner->preAuth($returnUrl, $redirectUrl, $source);
     }
 
+    /**
+     * Check if the given code corresponds to an authenticated user
+     *
+     * @param String $code
+     * @param String $redirectUrl
+     * @return User|null
+     */
     public function postAuth(String $code, String $redirectUrl): ?User
     {
         return $this->runner->postAuth($code, $redirectUrl);
